@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="simplyToDo">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simply To-Do</title>
+    <script rel="stylesheet" type="text/css" src="css/bootstrap.min.css"></script>
+</head>
+
+<body ng-controller="listController">
+    <ul>
+        <li ng-repeat="item in items">
+            <span>{{item.name}}</span>
+            <p>{{item.price | currency}}</p>
+        </li>
+    </ul>
+</body>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
